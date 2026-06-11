@@ -24,6 +24,7 @@ Cursor-style loops turn agent prompting into operational runbooks with target me
 ## Generated artifacts
 - Prototype: [[../Prototypes/Agent Loop Runbook Library/agent-loop-runbook-builder.html|agent-loop-runbook-builder.html]]
 - Prototype README: [[../Prototypes/Agent Loop Runbook Library/README|README]]
+- First real trial packet: [[../Prototypes/Agent Loop Runbook Library/First Real Trial Packet|First Real Trial Packet]]
 - Infographic: [[../Infographics/Agent Loop Runbook Library/agent-loop-runbook-flow.svg|agent-loop-runbook-flow.svg]]
 - Skill draft: [[../Skills/agent-loop-runbooks/SKILL|agent-loop-runbooks]]
 - Improvement loop: [[../Improvement-Loops/Agent Loop Runbook Library Loop|Agent Loop Runbook Library Loop]]
@@ -41,9 +42,10 @@ A one-screen SVG that explains the workflow from source signal to operational ar
 Draft repeatable process for writing safe long-running agent loops with measurable success criteria and rollback/stop rules.
 
 ## Improvement backlog
-- Run one real VinClawLabs/Mission Control trial and attach evidence.
+- Fill [[../Prototypes/Agent Loop Runbook Library/First Real Trial Packet|First Real Trial Packet]] during one real VinClawLabs/Mission Control loop trial and attach evidence.
 - Add a filled example after the first live use.
 - Decide whether to promote any skill draft after the second repeat.
 
 ## Change log
+- 2026-06-11: Added a fillable first real trial packet so the next runbook trial has an evidence trace, operator scoring table, and promote / pilot-only / iterate / hold gate.
 - 2026-06-11: Created package README, prototype, infographic, isolated GitHub repo mirror, and improvement loop.
