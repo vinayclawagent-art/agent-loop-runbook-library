@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Agent Loop Runbook Builder</title><style>
+:root{color-scheme:dark;--bg:#08111f;--panel:#101b2d;--ink:#e8f0ff;--muted:#99a8c2;--line:#263752;--hot:#7dd3fc;--ok:#86efac;--warn:#fde68a}*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at top left,#17345c,#08111f 42%,#050914);color:var(--ink)}main{max-width:1120px;margin:0 auto;padding:24px}.hero{display:grid;gap:12px;margin:12px 0 22px}.eyebrow{color:var(--hot);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:12px}h1{font-size:clamp(32px,7vw,68px);line-height:.95;margin:0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.card,section{background:rgba(16,27,45,.84);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,.22)}label{display:grid;gap:6px;margin:10px 0;color:var(--muted);font-size:13px}input,textarea,select{width:100%;border:1px solid var(--line);border-radius:14px;background:#07101f;color:var(--ink);padding:12px;font:inherit}textarea{min-height:90px}button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--hot),#a78bfa);color:#06111f;font-weight:800;padding:12px 16px;cursor:pointer}.pill{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:6px 10px;color:var(--muted);margin:4px 4px 0 0}.out{white-space:pre-wrap;background:#030711;border-radius:16px;padding:14px;border:1px solid var(--line);min-height:220px}.small{color:var(--muted);font-size:13px}a{color:var(--hot)}
+</style></head><body><main><div class='hero'><div class='eyebrow'>X Artifact Factory · 2026-06-11</div><h1>Agent Loop Runbook Builder</h1><p class='small'>Source: <a href='https://x.com/ericzakariasson/status/2064122350866682100'>Cursor Loops as Operational Agent Runbooks</a>. This is a dependency-free prototype; fill fields, generate markdown, paste into an agent run.</p><div><span class='pill'>score 9/10</span><span class='pill'>repo-ready</span><span class='pill'>evidence-first</span></div></div><div class='grid'><section><h2>Configure</h2>
+<label>Loop type<select id="kind"><option>Flaky-test exterminator</option><option>Post-deploy error watch</option><option>Dependency-upgrade grinder</option><option>Custom reliability loop</option></select></label>
+<label>Target metric<textarea id="goal">5 consecutive green test runs after fixing or quarantining every intermittent failure.</textarea></label>
+<label>Polling cadence / tools<textarea id="cadence">Run tests continuously; inspect logs and git diff after every failed run.</textarea></label>
+<label>Stop + escalation rules<textarea id="rules">Stop after 3 repeated unknown failures, destructive changes, missing credentials, or any rollback signal.</textarea></label>
+<button onclick='gen()'>Generate handoff</button></section><section><h2>Copyable output</h2><div id='out' class='out'></div></section></div></main><script>function v(id){return document.getElementById(id).value.trim()}function gen(){const out=document.getElementById('out');const md=`# Agent Loop Runbook
+
+Type: ${v('kind')}
+
+Target metric:
+${v('goal')}
+
+Polling cadence / tools:
+${v('cadence')}
+
+Stop + escalation rules:
+${v('rules')}
+
+Prompt:
+/loop ${v('goal')} Use this cadence: ${v('cadence')} Stop and escalate if: ${v('rules')} Return a final report with commands, changed files, evidence, and residual risk.`;out.textContent=md;localStorage.setItem('x_factory_agent-loop-runbook-library',out.textContent)}gen();</script></body></html>

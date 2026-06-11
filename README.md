@@ -1,0 +1,18 @@
+# Agent Loop Runbook Library
+
+Cursor-style loops turn agent prompting into operational runbooks with target metrics, polling cadence, stop criteria, and escalation paths for reliability work.
+
+Inspired by: https://x.com/ericzakariasson/status/2064122350866682100
+
+## What it contains
+- `artifact-package/README.md` — Obsidian package note mirror
+- `prototype/` — self-contained interactive artifact
+- `infographic/` — SVG workflow card
+- `skill-draft/` — draft skill when applicable
+- `improvement-loop/` — recurring improvement tracker
+
+## Quickstart
+Open `prototype/agent-loop-runbook-builder.html` in a browser, fill the fields, and copy the generated markdown into an agent run or issue.
+
+## Status
+Artifact is prepared for a first real trial. It is not validated until evidence is attached in the loop.
