@@ -18,7 +18,7 @@ Open `prototype/agent-loop-runbook-builder.html` in a browser, fill the fields, 
 Use `prototype/First Real Trial Packet.md` during the next live run. It sequences setup, builder output, evidence capture, and operator scoring without claiming validation before proof exists.
 
 ## Latest improvement
-`prototype/Promotion Decision Card.md` is now ready to turn the filled packet into a promote / pilot-only / iterate / hold decision before any README, prototype, or skill claim changes.
+`prototype/Post-Trial Debrief Template.md` is now ready to turn completed loop evidence and the promotion decision into exact README, prototype, and skill-draft patch decisions without claiming validation early.
 
 ## Status
-Artifact is prepared for a first real trial with an evidence packet and decision card ready. It is not validated until the packet and card are filled from a real run.
+Artifact is prepared for a first real trial with an evidence packet, decision card, and post-trial debrief ready. It is not validated until those artifacts are filled from a real run.

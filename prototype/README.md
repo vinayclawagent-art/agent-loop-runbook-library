@@ -11,5 +11,6 @@ Open `agent-loop-runbook-builder.html` in a browser. It is self-contained and st
 ## Next iteration ideas
 - Fill [[First Real Trial Packet]] during the next real runbook trial; it is ready for evidence capture, not validation-complete.
 - After the packet is filled, complete [[Promotion Decision Card]] before changing package, prototype, or skill claims.
+- Then complete [[Post-Trial Debrief Template]] to convert evidence into specific README/prototype/skill patch decisions.
 - Convert the generated markdown into a repo issue template if repeated.
 - Attach the completed output to [[../Improvement-Loops/Agent Loop Runbook Library Loop]].
