@@ -15,7 +15,10 @@ Inspired by: https://x.com/ericzakariasson/status/2064122350866682100
 Open `prototype/agent-loop-runbook-builder.html` in a browser, fill the fields, and copy the generated markdown into an agent run or issue.
 
 ## First trial packet
-Use `prototype/First Real Trial Packet.md` during the next live run. It sequences setup, builder output, evidence capture, operator scoring, and a promote / pilot-only / iterate / hold decision without claiming validation before proof exists.
+Use `prototype/First Real Trial Packet.md` during the next live run. It sequences setup, builder output, evidence capture, and operator scoring without claiming validation before proof exists.
+
+## Latest improvement
+`prototype/Promotion Decision Card.md` is now ready to turn the filled packet into a promote / pilot-only / iterate / hold decision before any README, prototype, or skill claim changes.
 
 ## Status
-Artifact is prepared for a first real trial with an evidence packet ready. It is not validated until the packet is filled from a real run.
+Artifact is prepared for a first real trial with an evidence packet and decision card ready. It is not validated until the packet and card are filled from a real run.
